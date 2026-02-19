@@ -53,3 +53,7 @@
 - Execução do projeto
 - Criação de usuário
 - Testes de endpoints com autenticação
+
+## Semana 3 
+- Mensagem enviada para a Estella   
+- Luiz já organizou o projects, só falta atribuir as tasks para o pessoal, que não veio hoje
