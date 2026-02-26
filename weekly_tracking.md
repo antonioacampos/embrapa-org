@@ -57,3 +57,19 @@
 ## Semana 3 
 - Mensagem enviada para a Estella   
 - Luiz já organizou o projects, só falta atribuir as tasks para o pessoal, que não veio hoje
+
+### Relato por equipe
+
+#### Lucas
+- Tradução começada - modelos iniciados
+- Refatoradas as branches e merges feitos
+
+#### Kayky
+- Refatoramento de Plot - Tradução
+
+#### Luiz
+- Refatoraram branches, deletaram e criaram novas
+- Fizeram a pagina de listagem de talhoes
+- Modal com detalhes do talhão específico 
+- Tela de cadastro de conta
+- Mapeadas rotas de usuário e autenticação 
