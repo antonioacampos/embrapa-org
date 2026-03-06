@@ -112,3 +112,26 @@
 - Projeto bem encaminhado
 - Equipe começando a estabilizar o fluxo de trabalho
 - Possibilidade de demonstrar o andamento diretamente pelo repositório
+
+## Semana 5
+- Reunião dos POs com a Estella
+- Alinhamento de modelagens, desenvolvimento e expectativas
+
+### Relato por equipe
+
+#### Kayky
+- Continuaram nas traduções
+- Parte do time fez os endpoints
+- Outra parte do time testou os endpoints previamente implementados
+
+#### Lucas
+- Catoia e Maciel: Mexendo na parte de usuários, alinhando com o Luiz a integração disso
+- Maciel implementou rota de redefinição de senha (Já ta pronto, só testar)
+- Heitor analisou um PR em prod que deu problema e corrigiu
+- Equipe da letícia passou por todos os endpoints de propriedade, certificou funcionamento mas necessidade de mudanças que já estão sendo mapeadas
+
+#### Luiz
+- Parte do time está fazendo o formulário de criação de propriedade
+- Ian terminou o formulário de criação de conta
+- Luiz mexeu no sync do PWA e buscou alinhar com o Catoia a criação de contas
+
