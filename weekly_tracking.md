@@ -73,3 +73,42 @@
 - Modal com detalhes do talhão específico 
 - Tela de cadastro de conta
 - Mapeadas rotas de usuário e autenticação 
+
+## Semana 4
+
+- Continuação do desenvolvimento após organização das equipes
+- Primeiro Pull Request do projeto foi aberto
+- Surgiram cerca de 10 conflitos de merge
+- Equipe começou a pegar ritmo de trabalho
+- Ajustes no fluxo de desenvolvimento e integração
+
+### Relato por equipe
+
+#### Lucas
+- Finalização do módulo de propriedades
+- Tentativa de iniciar apoio no módulo do Kayky
+- Identificado problema com alguns controllers que desapareceram
+- Correção desse problema ficou para o início da próxima aula
+
+#### Kayky
+- Continuação do desenvolvimento do módulo principal
+- Módulo de talhão identificado como um dos maiores do sistema
+- Ajuste será feito em conjunto na próxima semana (issues e sub-issues)
+
+#### Luiz
+- Verificação dos serviços existentes
+- Identificado que grande parte dos serviços pode ser reaproveitada
+- Necessidade de implementar apenas alguns tipos específicos
+- Análise dos controles e componentes reutilizáveis
+- Planejamento para começar a implementação dos serviços na próxima semana
+- Definição de que os serviços serão criados e disponibilizados para o restante da equipe
+- Finalização da tela de listagem de talhão
+- Tela permite visualizar todas as informações do talhão
+- Avaliação sobre necessidade de edição de campos nas telas de login
+- Implementação da lógica de login
+- Integração prevista para a próxima semana
+
+### Situação geral
+- Projeto bem encaminhado
+- Equipe começando a estabilizar o fluxo de trabalho
+- Possibilidade de demonstrar o andamento diretamente pelo repositório
