@@ -1,64 +1,62 @@
-# Ata de Reunião — Projeto
+**Ata de Reunião — Projeto**
 
 **Data:** 05/03/2026  
 **Responsáveis:** Estela, Gustavo e Antonio  
 
----
+***
 
 ## 1. Resumo
 
-O time avançou na estruturação da engenharia e no mapeamento de requisitos lógicos do sistema de cálculos integrados, mitigando riscos de inconsistência sistêmica em cenários com múltiplos talhões e buscando a rastreabilidade das regras de negócio de LER (Land Equivalent Ratio) e margens brutas.
+O time avançou na estruturação da engenharia e no mapeamento dos requisitos do sistema de cálculos integrados. As melhorias focaram em evitar inconsistências em cenários com vários talhões e garantir a rastreabilidade das regras de negócio de **LER (Land Equivalent Ratio)** e **margem bruta**.  
 
-As definições de governança de dados foram reestruturadas, desvinculando propriedades de CATIs.
+Também foi revisado o modelo de governança de dados, separando a entidade **Propriedade** das **CATIs**.
 
----
+***
 
 ## 2. Atividades Realizadas e Entregas
 
 ### 2.1 Engenharia de Testes e Mapeamento
 
-- **Mapeamento de Regras de Cálculo e Rastreabilidade**  
-  Consolidação das lógicas de conversão de dados de entrada, estoques de madeira em pé e margem bruta, garantindo que os cálculos fluam corretamente da folha de dados para o banco de dados central.
+- **Mapeamento de Regras de Cálculo**  
+  Consolidação das lógicas de conversão de dados de entrada, estoques de madeira e margem bruta, garantindo o fluxo correto entre a coleta de dados e o banco central.
 
-- **Tratamento de Exceções e Qualidade de Dados**  
-  Implementação de lógicas de mitigação em cenários de dados nulos, validando a aplicação de **“média condicional” (Média C)** para evitar falhas sistêmicas (divisão por zero) em talhões inativos.
+- **Tratamento de Exceções e Dados Nulos**  
+  Implementação de regras para lidar com dados vazios e evitar erros de divisão por zero, aplicando a **“média condicional (Média C)”** em talhões inativos.
 
-- **Quality Assurance em Funcionalidades Offline**  
-  Análise técnica para delimitação do escopo offline (PWA), definindo que a aplicação focará na captura primária de dados e na exibição de gráficos de **“Percepção”** e **“Bem-estar”**, isolando as lógicas pesadas para garantir a integridade do sistema em campo.
+- **Testes em Funcionalidades Offline (PWA)**  
+  Definição do escopo offline, que será focado na coleta inicial de dados e exibição de gráficos de **Percepção** e **Bem-estar**, deixando os cálculos mais pesados apenas para o modo online.
 
----
+***
 
 ### 2.2 Governança, Acessos e Dados
 
-- **Modelagem e Governança de Entidades**  
-  Reestruturação da arquitetura de banco de dados para tratar a **Propriedade** como entidade independente. Estabeleceu-se a permissão de múltiplos produtores e técnicos vinculados à mesma entidade, mitigando limitações do modelo de negócio anterior.
+- **Modelagem de Dados**  
+  Reorganização do banco para que **Propriedade** seja uma entidade independente. Agora, produtores e técnicos podem estar vinculados à mesma propriedade sem depender de vínculo direto com a **CATI**.
 
-- **Escalabilidade e Padronização Nacional**  
-  Decisão executiva de remover a obrigatoriedade de vínculo dos técnicos com a **CATI**, promovendo a adequação do sistema para adoção nacional por outros institutos.
+- **Padronização Nacional**  
+  Remoção da obrigatoriedade de vínculo com a **CATI**, possibilitando a adoção do sistema por outras instituições no país.
 
-- **Controle de Acessos**  
-  Definição rigorosa de visibilidade, garantindo que usuários finais visualizem apenas os **relatórios processados (deliverables)**, mantendo o banco de dados bruto sob restrição exclusiva aos administradores.
+- **Controle de Acesso**  
+  Definição de perfis de acesso: os usuários veem apenas os **relatórios processados**, enquanto os dados brutos ficam restritos aos administradores.
 
----
+***
 
 ## 3. Bloqueios e Riscos
 
-- **Risco/Bloqueio:**  
-  Limitação e indefinição arquitetônica sobre o modelo de entrega do software (**PWA via navegador**), o que impacta diretamente a estratégia de armazenamento offline.  
-
+- **Modelo de Entrega do Software (PWA)**  
+  Ainda há indefinição sobre o modelo de entrega via navegador, o que pode impactar a estratégia de armazenamento offline.  
   **Responsável:** Equipe de Desenvolvimento.
 
-- **Risco/Bloqueio:**  
-  Necessidade de adequação da lógica e rastreabilidade da multifuncionalidade para novos perfis de cultivo (ex.: **Agrofloresta** com cacau e banana), visando evitar falhas na padronização dos formulários sem impactar as regras vigentes de lavoura e floresta.  
-
+- **Adaptação a Novos Perfis de Cultivo**  
+  É necessário ajustar as regras do sistema para novos tipos de cultivo, como **agroflorestas com cacau e banana**, sem afetar as regras atuais de lavoura e floresta.  
   **Responsável:** Estela e Marcela.
 
----
+***
 
 ## 4. Próximos Passos
 
-- Aprovação e entrega final da **planilha mestre de regras de negócio**, contendo especificações visuais de obrigatoriedade, para homologação pela Engenharia de Testes.
+- Finalizar e aprovar a **planilha mestre de regras de negócio**, com as especificações de obrigatoriedade, para validação pela equipe de testes.  
+- Criar e validar o **protótipo dos relatórios gráficos de percepção offline**, que será a primeira entrega voltada ao uso em campo.  
+- Formalizar os **requisitos de infraestrutura e hospedagem do sistema**, seguindo as definições contratuais (web e mobile), para liberar as próximas etapas da arquitetura.
 
-- Prototipação e validação da **geração de relatórios gráficos de percepção em ambiente offline**, configurando um deliverable inicial de alto impacto para os produtores em campo.
-
-- Formalização técnica dos **requisitos de infraestrutura e hospedagem do software** baseada nas definições contratuais (web/mobile), permitindo a liberação das próximas etapas de arquitetura.
+***
