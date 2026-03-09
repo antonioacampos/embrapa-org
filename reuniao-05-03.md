@@ -58,5 +58,6 @@ Também foi revisado o modelo de governança de dados, separando a entidade **Pr
 - Finalizar e aprovar a **planilha mestre de regras de negócio**, com as especificações de obrigatoriedade, para validação pela equipe de testes.  
 - Criar e validar o **protótipo dos relatórios gráficos de percepção offline**, que será a primeira entrega voltada ao uso em campo.  
 - Formalizar os **requisitos de infraestrutura e hospedagem do sistema**, seguindo as definições contratuais (web e mobile), para liberar as próximas etapas da arquitetura.
+- Adicionar legendas na aba de **Percepção** para explicar **quais componentes a propriedade deve ter** para a pergunta ser exibida no sistema. 
 
 ***
